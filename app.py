@@ -13,7 +13,7 @@ def list_data(list, data):
 
 
 # Create a connection to MongoDB
-s3 = S3Connection(os.environ['DATABASE_URL'])
+s3 = S3Connection(os.environ['MONGODB_URI'])
 conn = s3
 # conn = 'mongodb://localhost:27017'
 

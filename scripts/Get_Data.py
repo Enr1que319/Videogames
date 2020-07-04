@@ -55,7 +55,7 @@ def Insert_MongoDB(response, list):
 
 
 # Create a connection to MongoDB
-s3 = S3Connection(os.environ['DATABASE_URL'])
+s3 = S3Connection(os.environ['MONGODB_URI'])
 conn = s3
 
 genresUrl = "https://rawg-video-games-database.p.rapidapi.com/genres"
