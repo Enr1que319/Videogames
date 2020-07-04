@@ -4,6 +4,7 @@ import pymongo
 from config import API_KEY
 import os
 import pandas as pd
+from boto.s3.connection import S3Connection
 
 
 def buildMongoData(results, collection):
@@ -54,7 +55,8 @@ def Insert_MongoDB(response, list):
 
 
 # Create a connection to MongoDB
-conn = 'mongodb://localhost:27017'
+s3 = S3Connection(os.environ['DATABASE_URL'])
+conn = s3
 
 genresUrl = "https://rawg-video-games-database.p.rapidapi.com/genres"
 platformsUrl = "https://rawg-video-games-database.p.rapidapi.com/platforms"
