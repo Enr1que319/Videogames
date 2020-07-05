@@ -12,8 +12,6 @@ def list_data(list, data):
 
 # Create a connection to MongoDB
 conn = os.environ.get("MONGODB_URI")
-# conn = 'mongodb://localhost:27017'
-# conn = 'mongodb+srv://Enr1qu319:forelsket1@videogames.vtdkb.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
 # Client for mongo
 client = pymongo.MongoClient(conn)
