@@ -12,7 +12,7 @@ def list_data(list, data):
 
 
 # Create a connection to MongoDB
-s3 = s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 conn = MONGODB_URI
 # conn = 'mongodb://localhost:27017'
 # conn = 'mongodb+srv://Enr1qu319:forelsket1@videogames.vtdkb.mongodb.net/<dbname>?retryWrites=true&w=majority'
