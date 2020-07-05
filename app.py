@@ -179,5 +179,5 @@ def totglobsales_percomp():
 
 
 if __name__ == "__main__":
-    @TODO: Create your app.run statement here
+    # @TODO: Create your app.run statement here
     app.run(debug=True)
