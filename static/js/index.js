@@ -16,42 +16,33 @@ var top3VgmYear = {
   dataType: "json",
 };
 
-var top3VgenSalesComp = {
-  url: "https://pclj-videogames.herokuapp.com/api/v1/top3gensales_percomp",
-  type: "GET",
-  dataType: "json",
-};
-
 function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
 function init() {
   $.ajax(top3VgmYear).done((top3vdgYr) => {
-    $.ajax(top3VgenSalesComp).done((top3genSaComp) => {
-      var year = [];
-      top3vdgYr[0]["data"][0].forEach((element) => {
-        year.push(element.year);
-      });
+    var year = [];
+    top3vdgYr[0]["data"][0].forEach((element) => {
+      year.push(element.year);
+    });
 
-      var uniqueYear = year.filter(function (item, pos) {
-        return year.indexOf(item) == pos;
-      });
+    var uniqueYear = year.filter(function (item, pos) {
+      return year.indexOf(item) == pos;
+    });
 
-      uniqueYear.forEach((object) =>
-        d3.select("#selDataset").append("option").text(object)
-      );
+    uniqueYear.forEach((object) =>
+      d3.select("#selDataset").append("option").text(object)
+    );
 
-      var dropdown_value = d3.select("#selDataset").property("value");
+    var dropdown_value = d3.select("#selDataset").property("value");
 
-      top3vdgYr[0]["data"][0].forEach((element) => {
-        if (dropdown_value == element.year) {
-          d3.select("#sample-metadata")
-            .append("p")
-            .text(`${element.name} (${element.company})`);
-        }
-      });
-      //Aqui va la lineal
+    top3vdgYr[0]["data"][0].forEach((element) => {
+      if (dropdown_value == element.year) {
+        d3.select("#sample-metadata")
+          .append("p")
+          .text(`${element.name} (${element.company})`);
+      }
     });
   });
 }

@@ -8,7 +8,7 @@ var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
 var totglobsales = {
-  url: "hhttps://pclj-videogames.herokuapp.com/api/v1/totglobsales_percomp",
+  url: "https://pclj-videogames.herokuapp.com/api/v1/totglobsales_percomp",
   type: "GET",
   dataType: "json",
 };

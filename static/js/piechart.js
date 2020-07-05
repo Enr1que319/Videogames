@@ -11,8 +11,6 @@ function pieChart(data) {
     mean = Math.round(mean * 100) / 100;
     values.push(mean);
   });
-  console.log(labels);
-  console.log(values);
 
   var trace1 = {
     labels: labels,
