@@ -1,23 +1,23 @@
 var genres = {
-  url: "http://127.0.0.1:5000/api/v1/genres",
+  url: "https://pclj-videogames.herokuapp.com/api/v1/genres",
   type: "GET",
   dataType: "json",
 };
 
 var games = {
-  url: "http://127.0.0.1:5000/api/v1/games",
+  url: "https://pclj-videogames.herokuapp.com/api/v1/games",
   type: "GET",
   dataType: "json",
 };
 
 var top3VgmYear = {
-  url: "http://127.0.0.1:5000/api/v1/top3vgs_peryear",
+  url: "https://pclj-videogames.herokuapp.com/api/v1/top3vgs_peryear",
   type: "GET",
   dataType: "json",
 };
 
 var top3VgenSalesComp = {
-  url: "http://127.0.0.1:5000/api/v1/top3gensales_percomp",
+  url: "https://pclj-videogames.herokuapp.com/api/v1/top3gensales_percomp",
   type: "GET",
   dataType: "json",
 };
