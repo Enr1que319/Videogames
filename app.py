@@ -71,7 +71,7 @@ list_data(totglobsales_percomp_json, totglobsales_percomp_results)
 # Flask Setup
 #################################################
 app = Flask(__name__)
-cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:5000"}})
+# cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:5000"}})
 
 #################################################
 # Flask Routes
@@ -79,7 +79,7 @@ cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:5000"}})
 
 
 @app.route('/')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def home():
 
     return render_template("index.html")
@@ -101,81 +101,81 @@ def home():
     # )
 
 
-@app.route('/api/v1/games')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def games():
+# @app.route('/api/v1/games')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def games():
 
-    return jsonify(games_json)
-
-
-@app.route('/api/v1/genre_globalsales')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def genre_globalsales():
-
-    return jsonify(genre_globalsales_json)
+#     return jsonify(games_json)
 
 
-@app.route('/api/v1/genre_sales')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def genre_sales():
+# @app.route('/api/v1/genre_globalsales')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def genre_globalsales():
 
-    return jsonify(genre_sales_json)
-
-
-@app.route('/api/v1/genres')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def genres():
-
-    return jsonify(genres_json)
+#     return jsonify(genre_globalsales_json)
 
 
-@app.route('/api/v1/global_sales')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def global_sales():
+# @app.route('/api/v1/genre_sales')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def genre_sales():
 
-    return jsonify(global_sales_json)
-
-
-@app.route('/api/v1/platforms')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def platforms():
-
-    return jsonify(platforms_json)
+#     return jsonify(genre_sales_json)
 
 
-@app.route('/api/v1/top3genres_percomp')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def top3genres_percomp():
+# @app.route('/api/v1/genres')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def genres():
 
-    return jsonify(top3genres_percomp_json)
-
-
-@app.route('/api/v1/top3genres_peryear')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def top3genres_peryear():
-
-    return jsonify(top3genres_peryear_json)
+#     return jsonify(genres_json)
 
 
-@app.route('/api/v1/top3gensales_percomp')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def top3gensales_percomp():
+# @app.route('/api/v1/global_sales')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def global_sales():
 
-    return jsonify(top3gensales_percomp_json)
-
-
-@app.route('/api/v1/top3vgs_peryear')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def top3vgs_peryear():
-
-    return jsonify(top3vgs_peryear_json)
+#     return jsonify(global_sales_json)
 
 
-@app.route('/api/v1/totglobsales_percomp')
-@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
-def totglobsales_percomp():
+# @app.route('/api/v1/platforms')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def platforms():
 
-    return jsonify(totglobsales_percomp_json)
+#     return jsonify(platforms_json)
+
+
+# @app.route('/api/v1/top3genres_percomp')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def top3genres_percomp():
+
+#     return jsonify(top3genres_percomp_json)
+
+
+# @app.route('/api/v1/top3genres_peryear')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def top3genres_peryear():
+
+#     return jsonify(top3genres_peryear_json)
+
+
+# @app.route('/api/v1/top3gensales_percomp')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def top3gensales_percomp():
+
+#     return jsonify(top3gensales_percomp_json)
+
+
+# @app.route('/api/v1/top3vgs_peryear')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def top3vgs_peryear():
+
+#     return jsonify(top3vgs_peryear_json)
+
+
+# @app.route('/api/v1/totglobsales_percomp')
+# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+# def totglobsales_percomp():
+
+#     return jsonify(totglobsales_percomp_json)
 
 
 if __name__ == "__main__":
