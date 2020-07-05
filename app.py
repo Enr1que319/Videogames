@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, json, render_template
 import pymongo
-from boto.s3.connection import S3Connection
 import os
 
 # Function to extract data from DB
@@ -12,8 +11,7 @@ def list_data(list, data):
 
 
 # Create a connection to MongoDB
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
-conn = MONGODB_URI
+conn = os.environ.get("MONGODB_URI")
 # conn = 'mongodb://localhost:27017'
 # conn = 'mongodb+srv://Enr1qu319:forelsket1@videogames.vtdkb.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
