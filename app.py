@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, json, render_template
 import pymongo
-# from flask_cors import CORS, cross_origin
 from boto.s3.connection import S3Connection
 import os
 
@@ -52,46 +51,39 @@ list_data(totglobsales_percomp_json, totglobsales_percomp_results)
 # Flask Setup
 #################################################
 app = Flask(__name__)
-# cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:5000"}})
 
 
 @app.route('/')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def home():
 
     return render_template("index.html")
 
 
 @ app.route('/api/v1/games')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def games():
 
     return jsonify(games_json)
 
 
 @ app.route('/api/v1/genres')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def genres():
 
     return jsonify(genres_json)
 
 
 @ app.route('/api/v1/top3gensales_percomp')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def top3gensales_percomp():
 
     return jsonify(top3gensales_percomp_json)
 
 
 @ app.route('/api/v1/top3vgs_peryear')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def top3vgs_peryear():
 
     return jsonify(top3vgs_peryear_json)
 
 
 @ app.route('/api/v1/totglobsales_percomp')
-# @cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
 def totglobsales_percomp():
 
     return jsonify(totglobsales_percomp_json)
