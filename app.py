@@ -2,7 +2,7 @@ from flask import Flask, jsonify, json, render_template
 import pymongo
 import os
 
-# Function to extract data from DB
+# Function to extract data from DB.
 
 
 def list_data(list, data):
