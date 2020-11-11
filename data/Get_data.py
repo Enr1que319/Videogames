@@ -27,7 +27,7 @@ def buildMongoData(results, collection):
     data_dict['data'] = data_all
     collection.update({}, data_dict, upsert=True)
 
-# Function to save game in MongoDB
+# Function to save game in MongoDB.
 
 
 def Insert_MongoDB(response, list):
