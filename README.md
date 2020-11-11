@@ -36,9 +36,9 @@ This dashboard contain information about:
 
 Nintendo, Sony and Microsoft are the companies that were taken to make this dashboard. The data was provided by [Rapid API](https://rapidapi.com/marketplace "API") from one of the APIS that contains a lot of information of videogames in the last years.
 
-
-
-
-
 Here you can see the dashboard
 [Videogames Dashboard](https://pclj-videogames.herokuapp.com "PCLJ Consultancy Group")
+
+## Screenshots
+
+[![](img/1.png)]()
