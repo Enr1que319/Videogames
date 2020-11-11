@@ -5,7 +5,8 @@
 ## Introduction
 
 This project was created with the intention of answering certain questions about video games.
-assuming that we are a consultancy company which has been asked to advise a new video game producer BestVGS Cia. Ltd. which specializes in making a videogame. They have been proposed to associate with one of these amazing Brands: They want to enquire the following questions:
+
+Assuming that we are a consultancy company which has been asked to advise a new video game producer BestVGS Cia. Ltd. which specializes in making a videogame. They have been proposed to associate with one of these amazing Brands: They want to enquire the following questions:
 
 - Which company should they associate playstation vs xbox nintendo csv metrics json
 - Relations between genre and console
