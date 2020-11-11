@@ -1,5 +1,7 @@
 # Videogames
 
+[![](img/games.jpg)]()     
+
 ## Introduction
 
 This project was created with the intention of answering certain questions about video games.
@@ -26,15 +28,15 @@ The following tools were used to developed the web page
 + HTML
 + CSS
 
-
-
 This dashboard contain information about: 
 
 - Top 3 games per year
 - Critics by genres
 - Line chart that show the global sales per company
 
-Nintendo, Sony and Microsoft are the companies that were taken to make this dashboard
+Nintendo, Sony and Microsoft are the companies that were taken to make this dashboard. The data was provided by [Rapid API](https://rapidapi.com/marketplace "API") from one of the APIS that contains a lot of information of videogames in the last years.
+
+
 
 
 
